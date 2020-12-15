@@ -28,3 +28,4 @@ module.exports = app => {
 3. Checkout the code in `src/index.tsx file`(this repo) and `Shell.tsx` file from our Shell app to know how this code is connected to the Shell app. This is necessary to do the mounting/unmounting of the react app manually.
 
 4. Update `src/App.tsx` to pass the history object coming from shell to App component. IMP to keep track of route history.
+5. I have use react-app-rewire[https://www.npmjs.com/package/react-app-rewired] to update the webpack config without ejecting the app. This is require to create a build with absolute path. Checkout code in `config-overrides.js` file.
